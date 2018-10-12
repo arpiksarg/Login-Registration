@@ -133,7 +133,7 @@
         <!--Logout View Controller-->
         <scene sceneID="ZXs-tK-UVM">
             <objects>
-                <viewController storyboardIdentifier="LogoutViewController" id="pDi-DA-0E4" customClass="LogoutViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoutVC" id="pDi-DA-0E4" customClass="LogoutViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jVd-ff-O8N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
