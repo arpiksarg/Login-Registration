@@ -251,13 +251,13 @@
                                         <rect key="frame" x="0.0" y="150.00000000000003" width="300" height="50"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8p-tg-RaA" customClass="RegisterationFieldsStyle" customModule="Login" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="225.00000000000003" width="300" height="49.999999999999972"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-AL-P5c">
                                         <rect key="frame" x="0.0" y="300" width="300" height="41"/>
@@ -284,7 +284,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="backToLogin:" destination="1iz-i6-fEl" eventType="touchUpInside" id="heF-pd-Wr4"/>
+                                            <action selector="backToLogin" destination="1iz-i6-fEl" eventType="touchUpInside" id="XlG-LB-g1A"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -310,7 +310,6 @@
                         <viewLayoutGuide key="safeArea" id="Tpm-Uz-99F"/>
                     </view>
                     <connections>
-                        <outlet property="backgroudTapAction" destination="wKS-jV-ciA" id="GbB-zp-Zhu"/>
                         <outlet property="confirmPasswordField" destination="o8p-tg-RaA" id="D0Q-CN-YLj"/>
                         <outlet property="emailField" destination="ldF-fw-rsd" id="Mik-vK-rzs"/>
                         <outlet property="passwordField" destination="2D6-wZ-CWu" id="oR9-Ru-EhM"/>
