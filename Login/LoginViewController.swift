@@ -53,6 +53,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if isValidUser() {
             let vc = storyboard!.instantiateViewController(withIdentifier: "LogoutViewController")
             navigationController?.setViewControllers([vc], animated: true)
+            UserDefaults.standard.set(true, forKey: "isLoggedIn")
         } else {
             self.presentAlert(firstTitle: "Something wrong!",
                               secondTitle: "Ok",
