@@ -14,7 +14,7 @@
 		E248C622215CBE8900770366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E248C620215CBE8900770366 /* LaunchScreen.storyboard */; };
 		E248C648215D272C00770366 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248C647215D272C00770366 /* UIView.swift */; };
 		E24DFAD821662843003330F2 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFAD721662843003330F2 /* Registration.swift */; };
-		E24DFADC21664A8C003330F2 /* RegisterField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFADB21664A8C003330F2 /* RegisterField.swift */; };
+		E24DFADC21664A8C003330F2 /* RegisterationFieldsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFADB21664A8C003330F2 /* RegisterationFieldsStyle.swift */; };
 		E271D0452163A30700E06CAE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271D0442163A30700E06CAE /* RegistrationViewController.swift */; };
 		E2DA7F5621622F0B00D45F6C /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA7F5521622F0B00D45F6C /* LogoutViewController.swift */; };
 		E2DA7F58216252D400D45F6C /* UiViewControllerExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA7F57216252D400D45F6C /* UiViewControllerExtentions.swift */; };
@@ -30,7 +30,7 @@
 		E248C623215CBE8900770366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E248C647215D272C00770366 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E24DFAD721662843003330F2 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
-		E24DFADB21664A8C003330F2 /* RegisterField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterField.swift; sourceTree = "<group>"; };
+		E24DFADB21664A8C003330F2 /* RegisterationFieldsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationFieldsStyle.swift; sourceTree = "<group>"; };
 		E271D0442163A30700E06CAE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E2DA7F5521622F0B00D45F6C /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		E2DA7F57216252D400D45F6C /* UiViewControllerExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtentions.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 				E2DA7F57216252D400D45F6C /* UiViewControllerExtentions.swift */,
 				E271D0442163A30700E06CAE /* RegistrationViewController.swift */,
 				E24DFAD721662843003330F2 /* Registration.swift */,
-				E24DFADB21664A8C003330F2 /* RegisterField.swift */,
+				E24DFADB21664A8C003330F2 /* RegisterationFieldsStyle.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				E248C648215D272C00770366 /* UIView.swift in Sources */,
 				E2DA7F58216252D400D45F6C /* UiViewControllerExtentions.swift in Sources */,
 				E248C618215CBE8700770366 /* AppDelegate.swift in Sources */,
-				E24DFADC21664A8C003330F2 /* RegisterField.swift in Sources */,
+				E24DFADC21664A8C003330F2 /* RegisterationFieldsStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

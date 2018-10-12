@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterField: UITextField {
+class RegisterationFieldsStyle: UITextField {
 
     override func awakeFromNib() {
         layer.borderWidth = 2
