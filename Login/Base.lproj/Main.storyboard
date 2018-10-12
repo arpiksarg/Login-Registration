@@ -139,20 +139,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SSQ-hu-ORz">
-                                <rect key="frame" x="142.66666666666666" y="319.66666666666669" width="128.99999999999997" height="97"/>
+                                <rect key="frame" x="0.0" y="312.66666666666669" width="414" height="111"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOx-Ve-hVh">
-                                        <rect key="frame" x="0.0" y="0.0" width="129" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="129" id="afM-9d-FXz"/>
-                                            <constraint firstAttribute="height" constant="36" id="r5v-cy-szs"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOx-Ve-hVh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipn-dz-QNt">
-                                        <rect key="frame" x="29.333333333333343" y="44" width="70" height="53"/>
+                                        <rect key="frame" x="172" y="58" width="70" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="GBg-i1-E9i"/>
                                             <constraint firstAttribute="width" constant="70" id="uA2-Cs-0S1"/>
@@ -171,7 +167,9 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SSQ-hu-ORz" firstAttribute="centerX" secondItem="jVd-ff-O8N" secondAttribute="centerX" id="RmR-qq-x5c"/>
+                            <constraint firstItem="ZoD-VI-CJY" firstAttribute="trailing" secondItem="SSQ-hu-ORz" secondAttribute="trailing" id="Ug7-FZ-x20"/>
                             <constraint firstItem="SSQ-hu-ORz" firstAttribute="centerY" secondItem="jVd-ff-O8N" secondAttribute="centerY" id="aVH-38-5Q8"/>
+                            <constraint firstItem="SSQ-hu-ORz" firstAttribute="leading" secondItem="ZoD-VI-CJY" secondAttribute="leading" id="hcy-d0-Zl5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZoD-VI-CJY"/>
                         <userDefinedRuntimeAttributes>
@@ -183,6 +181,9 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="userWelcome" destination="QOx-Ve-hVh" id="2dL-Gf-OAo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDr-RT-TXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
