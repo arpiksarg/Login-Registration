@@ -9,7 +9,7 @@
 import UIKit
 
 class LogoutViewController: UIViewController {
-
+    
     @IBOutlet weak var userWelcome: UILabel!
     
     @IBAction func logoutAction() {
@@ -21,7 +21,8 @@ class LogoutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let user = Registration.username
         navigationController?.isNavigationBarHidden = true
-        userWelcome.text = "Welcome \(Registration.username)!"
+        userWelcome.text = "Welcome \(user)!"
     }
 }

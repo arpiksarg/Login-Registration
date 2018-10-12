@@ -15,32 +15,31 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var confirmPasswordField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     @IBAction func backToLogin() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
         navigationController?.setViewControllers([vc, self], animated: false)
         navigationController?.popViewController(animated: true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     @IBAction func submitAction(_ sender: Any) {
         if !usernameField.text!.isEmpty &&
-           !emailField.text!.isEmpty &&
-           !passwordField.text!.isEmpty &&
+            !emailField.text!.isEmpty &&
+            !passwordField.text!.isEmpty &&
             !confirmPasswordField.text!.isEmpty {
-           if passwordField.text == confirmPasswordField.text {
+            if passwordField.text == confirmPasswordField.text {
                 Registration.username = usernameField.text!
                 Registration.email = emailField.text!
                 Registration.password = passwordField.text!
-           
+                
                 backToLogin()
-            
-        } else {
-            presentAlert(firstTitle: "Something wrong!",
-                         secondTitle: "Ok",
-                         message: "Password didn't match!")
+            } else {
+                presentAlert(firstTitle: "Something wrong!",
+                             secondTitle: "Ok",
+                             message: "Password didn't match!")
             }
         } else {
             presentAlert(firstTitle: "Error!",

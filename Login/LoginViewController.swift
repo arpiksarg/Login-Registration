@@ -45,9 +45,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let password = Registration.password
         
         if username.isEmpty || password.isEmpty {
-            self.presentAlert(firstTitle: "Error",
-                              secondTitle: "Ok",
-                              message: "Please fill in both fields")
+            presentAlert(firstTitle: "Error",
+                         secondTitle: "Ok",
+                         message: "Please fill in both fields")
         }
         
         if isValidUser() {
@@ -55,14 +55,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             navigationController?.setViewControllers([vc], animated: true)
             UserDefaults.standard.set(true, forKey: "isLoggedIn")
         } else {
-            self.presentAlert(firstTitle: "Something wrong!",
-                              secondTitle: "Ok",
-                              message: "Invalid username or password")
+            presentAlert(firstTitle: "Something wrong!",
+                         secondTitle: "Ok",
+                         message: "Invalid username or password")
         }
     }
-  
+    
     private func isValidUser() -> Bool {
         var isValid = false
+        
         if usernameField.text == Registration.username && passwordField.text == Registration.password {
             isValid = true
         }
