@@ -17,7 +17,8 @@ class RegistrationViewController: UIViewController {
     
     @IBAction func backToLogin() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.setViewControllers([vc, self], animated: false)
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
@@ -34,12 +35,17 @@ class RegistrationViewController: UIViewController {
                 Registration.email = emailField.text!
                 Registration.password = passwordField.text!
            
-            backToLogin()
+                backToLogin()
+            
+        } else {
+            presentAlert(firstTitle: "Something wrong!",
+                         secondTitle: "Ok",
+                         message: "Password didn't match!")
+            }
         } else {
             presentAlert(firstTitle: "Error!",
-                         secondTitle: "Something Wrong",
+                         secondTitle: "Ok",
                          message: "Please fill in all fields")
-            }
         }
     }
     
@@ -47,6 +53,4 @@ class RegistrationViewController: UIViewController {
         usernameField.resignFirstResponder()
         passwordField.resignFirstResponder()
     }
-
-    
 }
