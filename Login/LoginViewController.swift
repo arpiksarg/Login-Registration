@@ -43,8 +43,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tapToLogin() {
         let username = Registration.username
         let password = Registration.password
-        print(username)
-        print(password)
         
         if username.isEmpty || password.isEmpty {
             self.presentAlert(firstTitle: "Error",
@@ -53,9 +51,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         
         if isValidUser() {
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "LogoutViewController")
-            navigationController?.pushViewController(vc, animated: true)
+            let vc = storyboard!.instantiateViewController(withIdentifier: "LogoutViewController")
+            navigationController?.setViewControllers([vc], animated: true)
         } else {
             self.presentAlert(firstTitle: "Something wrong!",
                               secondTitle: "Ok",

@@ -11,7 +11,7 @@ import UIKit
 class LogoutViewController: UIViewController {
 
     @IBAction func logoutAction() {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "RegistrationVC") as! RegistrationViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
         UserDefaults.standard.removeObject(forKey: "isLoggedIn")
         navigationController?.setViewControllers([vc, self], animated: false)
         navigationController?.popViewController(animated: true)
